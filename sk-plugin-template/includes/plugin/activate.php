@@ -25,4 +25,8 @@ function sk_activate_plugin()
     if (function_exists('sk_plugin_roles')) {
         sk_plugin_roles();
     }
+    
+    if (function_exists('sk_plugin_schedule')) {
+        sk_plugin_schedule();
+    }
 }

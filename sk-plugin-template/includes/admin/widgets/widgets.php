@@ -11,5 +11,3 @@ function sk_widgets_init()
 {
     register_widget('Sk_Custom_Widget');
 }
-
-add_action('widgets_init', 'sk_widgets_init');

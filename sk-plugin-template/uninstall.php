@@ -1,8 +1,6 @@
 <?php
 
-/*
-* Use to remove any custom tables permanently.
-*/
+// Used to remove any custom tables permanently.
 
 if (!defined('WP_UNINSTALL_PLUGIN')) {
     exit;

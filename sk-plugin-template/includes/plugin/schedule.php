@@ -1,6 +1,6 @@
 <?php
 
-function sk_schedule_event()
+function sk_plugin_schedule()
 {
     // Schedule any events here
 }
