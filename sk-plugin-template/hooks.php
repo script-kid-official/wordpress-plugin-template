@@ -4,10 +4,12 @@
 // Enqueue Scripts
 add_action('admin_enqueue_scripts', 'sk_admin_enqueue_scripts');
 
+// Custom Post Type
+add_action('init', 'sk_custom_post_type_init');
+
 // Notices
 add_action('admin_notices', 'sk_show_all_notices');
 add_action('wp_ajax_sk_dismiss_pending_admin_notice', 'sk_dismiss_pending_admin_notice');
-
 
 // Widgets
 add_action('widgets_init', 'sk_widgets_init');
@@ -16,6 +18,7 @@ add_action('widgets_init', 'sk_widgets_init');
 add_action('wp_dashboard_setup', 'sk_dashboard_widgets_init');
 
 /* /Admin */
+
 
 /* Frontend */
 // Plugin styles and scripts

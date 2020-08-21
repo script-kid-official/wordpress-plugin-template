@@ -9,7 +9,7 @@ function sk_enqueue_scripts()
     // Register scripts
     wp_register_script(
         'sk_script',
-        plugins_url('/assets/js/sj-scripts.js', SK_PLUGIN_URL),
+        plugins_url('/assets/js/sk-scripts.js', SK_PLUGIN_URL),
         ['jquery'],
         '1.0.0',
         true
