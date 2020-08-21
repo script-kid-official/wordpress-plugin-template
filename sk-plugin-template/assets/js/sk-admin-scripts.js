@@ -9,12 +9,9 @@
     e.preventDefault();
 
     const noticeType = e.currentTarget.parentNode.dataset.noticeType;
-    console.log(parent);
     $.post(ajaxurl, {
       action: "sk_dismiss_pending_admin_notice",
       notice_type: noticeType,
-    }).then((res) => {
-      console.log("res:", res);
     });
   });
 })(jQuery);
