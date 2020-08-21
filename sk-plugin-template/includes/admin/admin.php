@@ -10,3 +10,6 @@ include('notices/notices.php');
 
 // Widgets
 include('widgets/widgets.php');
+
+// Dashboard Widgets
+include('dashboard-widgets/dashboard-widgets.php');

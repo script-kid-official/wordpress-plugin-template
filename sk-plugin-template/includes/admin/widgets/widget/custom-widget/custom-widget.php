@@ -8,7 +8,6 @@ class Sk_Custom_Widget extends WP_Widget
        */
     public function __construct()
     {
-
         $widget_options           =   array(
             'description'       =>  'Script Kiddy Custom Widget',
         );
@@ -89,9 +88,15 @@ class Sk_Custom_Widget extends WP_Widget
 
         // Load Widget Template Contents
         $widgetHtml = file_get_contents('template/custom-widget-template.php', true);
+
         $widgetHtml = str_replace(
             'SK_WIDGET_CONTENT',
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem tempore esse aliquid optio autem deserunt nisi soluta aliquam voluptatem libero qui dolor eos exercitationem iure fugit aspernatur, necessitatibus, eveniet quibusdam.',
+            'Script Kid - Widget Display',
+            $widgetHtml
+        );
+        $widgetHtml = str_replace(
+            'SK_WIDGET_IMAGE_CONTENT',
+            'https://www.script-kiddie.co.za/external-images/rainbow_dash__hoodie.png',
             $widgetHtml
         );
 
