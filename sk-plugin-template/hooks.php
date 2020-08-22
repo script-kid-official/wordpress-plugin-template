@@ -17,19 +17,13 @@ add_action('widgets_init', 'sk_widgets_init');
 // Dashboard Widgets
 add_action('wp_dashboard_setup', 'sk_dashboard_widgets_init');
 
-
-
 /* /Admin */
-
 
 /* Frontend */
 // Plugin styles and scripts
 add_action('wp_enqueue_scripts', 'sk_enqueue_scripts', 100);
 
-
 /* /Frontend */
-
-/* Process */
 
 
 /* Shortcodes */
