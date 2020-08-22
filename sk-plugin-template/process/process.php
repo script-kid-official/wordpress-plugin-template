@@ -4,4 +4,6 @@
 
 // Admin Notices Processes
 include('admin/notices/remove-notice.php');
-// include('custom-post-type.php');
+
+// Bootstrap Plugin Settings Processes
+include('admin/plugin-settings/bootstrap-plugin-settings/bootstrap-plugin-settings.php');

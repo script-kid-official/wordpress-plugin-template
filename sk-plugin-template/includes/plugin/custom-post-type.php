@@ -36,9 +36,9 @@ function sk_custom_post_type_init()
         'show_in_rest'          =>  true
     );
  
-    register_post_type('script-kid', $args);
+    register_post_type('script-kiddy', $args);
 
-    register_taxonomy('customTaxonomy', 'script-kid', [
+    register_taxonomy('customTaxonomy', 'script-kiddy', [
         'label'                 =>  __('customTaxonomy', 'script-kid'),
         'rewrite'               =>  [ 'slug' => 'customTaxonomy' ],
         'show_in_rest'          =>  true
