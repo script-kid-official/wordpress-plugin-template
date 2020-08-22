@@ -13,3 +13,6 @@ include('widgets/widgets.php');
 
 // Dashboard Widgets
 include('dashboard-widgets/dashboard-widgets.php');
+
+// Dashboard Plugin Settings
+include('option-settings/option-settings.php');
