@@ -1,6 +1,6 @@
 <?php
 
-/* Admin */
+/*** Admin ***/
 // Enqueue Scripts
 add_action('admin_enqueue_scripts', 'sk_admin_enqueue_scripts');
 
@@ -16,14 +16,14 @@ add_action('widgets_init', 'sk_widgets_init');
 
 // Dashboard Widgets
 add_action('wp_dashboard_setup', 'sk_dashboard_widgets_init');
+/*** /Admin ***/
 
-/* /Admin */
 
-/* Frontend */
+/*** Frontend ***/
 // Plugin styles and scripts
 add_action('wp_enqueue_scripts', 'sk_enqueue_scripts', 100);
 
-/* /Frontend */
-
-
 /* Shortcodes */
+add_shortcode('sk_shortcode', 'sk_plugin_shortcode');
+add_shortcode('sk_shortcode_with_attributes', 'sk_plugin_shortcode_with_attributes');
+/*** /Frontend ***/

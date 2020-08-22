@@ -23,10 +23,8 @@ include(dirname(SK_PLUGIN_URL) . '/includes/includes.php');
 // All add_action, add_filter and add_shortcode hooks
 include(dirname(SK_PLUGIN_URL) . '/hooks.php');
 
-
 // Processes
 include(dirname(__FILE__) .'/process/process.php');
-
 
 register_activation_hook(SK_PLUGIN_URL, 'sk_activate_plugin');
 register_deactivation_hook(SK_PLUGIN_URL, 'sk_deactivate_plugin');
