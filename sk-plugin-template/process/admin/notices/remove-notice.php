@@ -30,9 +30,4 @@ function sk_dismiss_pending_admin_notice()
 
     // Update the existing options with the new options
     update_option($sk_option_name, $sk_new_options);
-
-    wp_send_json([
-        'success' => true,
-        'message' => $_POST['notice_type'] . 'notice was disabled in the table options'
-    ]);
 }
