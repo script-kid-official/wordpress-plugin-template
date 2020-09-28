@@ -5,13 +5,27 @@
 
   console.log("%cScript Kiddy Admin Scripts Running", rainbow);
 
-  $(document).on("click", ".sk-pending-admin-notice .notice-dismiss", (e) => {
-    e.preventDefault();
+  document.body.addEventListener(
+    "click",
+    (evt) => {
+      const target = evt.target;
+      const parent = target.parentElement;
 
-    const noticeType = e.currentTarget.parentNode.dataset.noticeType;
-    $.post(ajaxurl, {
-      action: "sk_dismiss_pending_admin_notice",
-      notice_type: noticeType,
-    });
-  });
+      if (parent.classList.contains("ubu-link-builder-notice")) {
+        const requestOptions = {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded; charset=utf-8",
+          },
+          body:
+            "action=ubu_dismiss_pending_admin_notice&notice_type=" +
+            parent.dataset.noticeType,
+        };
+
+        // @ts-ignore
+        fetch(ajaxurl, requestOptions);
+      }
+    },
+    false
+  );
 })(jQuery);
