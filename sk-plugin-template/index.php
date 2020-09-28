@@ -16,15 +16,16 @@ if (!function_exists('add_action')) {
 
 // Constants
 define('SK_PLUGIN_URL', __FILE__);
+define('SK_PLUGIN_DIR_URL', dirname(__FILE__));
 
 // Includes
-include(dirname(SK_PLUGIN_URL) . '/includes/includes.php');
+include(SK_PLUGIN_DIR_URL . '/includes/includes.php');
 
 // All add_action, add_filter and add_shortcode hooks
-include(dirname(SK_PLUGIN_URL) . '/hooks.php');
+include(SK_PLUGIN_DIR_URL . '/hooks.php');
 
 // Processes
-include(dirname(__FILE__) .'/process/process.php');
+include(SK_PLUGIN_DIR_URL .'/process/process.php');
 
 register_activation_hook(SK_PLUGIN_URL, 'sk_activate_plugin');
 register_deactivation_hook(SK_PLUGIN_URL, 'sk_deactivate_plugin');

@@ -1,13 +1,13 @@
 <?php
 
 // Plugin Activation and Deactivation
-include(dirname(__FILE__) .'/plugin/plugin.php');
+include(SK_PLUGIN_DIR_URL .'/includes/plugin/plugin.php');
 
 // Admin
-include(dirname(__FILE__) .'/admin/admin.php');
+include(SK_PLUGIN_DIR_URL .'/includes/admin/admin.php');
 
 // Frontend scripts
-include(dirname(__FILE__) .'/frontend/enqueue.php');
+include(SK_PLUGIN_DIR_URL .'/includes/frontend/enqueue.php');
 
 // Shortcodes
-include(dirname(__FILE__) .'/shortcodes/shortcodes.php');
+include(SK_PLUGIN_DIR_URL .'/includes/shortcodes/shortcodes.php');
